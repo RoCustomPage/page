@@ -8,42 +8,35 @@
   <link rel="stylesheet" href="../assets/style.css" />
 </head>
 <body>
-  <header class="navbar">
+  <header id="navbar" class="navbar">
     <div class="navbar-container">
       <div class="hamburger" onclick="toggleMenu()">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-
       <a href="/" class="navbar-logo">
         <span>Ro</span><span class="logo-alt-text">Custom</span>
       </a>
-
       <nav class="nav-links">
         <a href="/">Home</a>
         <a href="/privacy">Privacy</a>
         <a href="/support">Support</a>
       </nav>
-
       <a href="https://discord.com/invite/bXXy65Uqaa" target="_blank" class="discord-link" rel="noopener noreferrer">
-        <img src="/assets/discord.png" alt="Discord" />
+        <img src="/assets/discord.png" alt="Discord Server" />
       </a>
     </div>
-
     <div id="mobileMenu" class="mobile-menu">
       <a href="/">Home</a>
       <a href="/privacy">Privacy</a>
       <a href="/support">Support</a>
     </div>
   </header>
-
   <main class="page-content">
     <h1>Privacy Policy</h1>
     <p><strong>Last Updated:</strong> June 22, 2025</p>
-    
     <p>Thank you for using RoCustom ("the Extension"). This Privacy Policy describes the information handled by the Extension and explains how we approach your privacy. Our goal is to enhance your experience on roblox.com while respecting your data.</p>
-
     <h2>1. Information We Handle</h2>
     <p>RoCustom is designed to be privacy-first. The Extension handles two main categories of data, both of which are stored only on your local computer using the standard Chrome Storage API. We, the developers, have no access to this data.</p>
     <p><strong>a) User-Configured Settings:</strong>
@@ -53,41 +46,40 @@
     <p><strong>b) Locally Stored Content and State:</strong>
         <p>For certain features, data is stored using browser localStorage (unlimited), which is also local to your computer and not synced across devices. This includes:</p>
         <p style="color: white; margin-left: 15px; margin-top: -5px;">I. Video Background (or Font): If you upload a video / font for your home page, the video / font data is converted and stored locally. This data is only used to display the background / font on roblox.com and is not transmitted anywhere.</p>
-        
     <h2>2. Information We DO NOT Collect</h2>
     <p>We want to be perfectly clear about what we do not do. RoCustom does not collect, store, transmit, or share any Personally Identifiable Information (PII) or sensitive Browse data. This includes, but is not limited to:</p>
     <p><strong>a) Your Roblox User ID / Username and cookies:</strong>
         <p style="color: white; margin-left: 15px; margin-top: -5px;">I. While the Extension's popup fetches this information from Roblox APIs to display it to you for your convenience, it is never stored permanently by the Extension or transmitted to any third-party servers. It is only displayed temporarily while the popup is open.</p>
     <p><strong>b) Your Browse history, passwords, or personal information from any website.</strong>
     <p><strong>c) Content from the web pages you visit.</strong>
-
     <h2>3. How We Use Your Data</h2>
     <p>The settings and data stored by the Extension are used exclusively to provide its core functionality:</p>
     <p><strong>a) To apply your chosen visual customizations and hide / show elements on roblox.com.</strong>
     <p><strong>b) To display your selected video background or font.</strong>
-
     <h2>4. Data Sharing and Third Parties</h2>
     <p>We do not sell, trade, or otherwise transfer your settings or any other data to outside parties. The Extension makes necessary requests to Roblox APIs (e.g., presence.roblox.com, economy.roblox.com, thumbnails.roblox.com) to provide its features, but it does not send any personal information to external servers controlled by the developer. Links to third-party sites like Discord or Boosty are provided for convenience and are subject to their own respective privacy policies.</p>
-
     <h2>5. Changes to This Privacy Policy</h2>
     <p>We may update this Privacy Policy from time to time. Any changes will be reflected in an updated version of the extension and a revised "Last Updated" date.</p>
-
     <h2>6. Contact Us</h2>
     <p>If you have any questions about this Privacy Policy, please contact us at:</p>
     <p style="color: white">E-mail: rocustom.ext@gmail.com<br>Discord: discord.gg/bXXy65Uqaa</p>
   </main>
-  
   <footer class="footer-bar">
     &copy; 2025 RoCustom. Not affiliated with Roblox Corporation.
   </footer>
-
   <script>
     function toggleMenu() {
       const hamburger = document.querySelector('.hamburger');
       const mobileMenu = document.getElementById('mobileMenu');
       hamburger.classList.toggle('active');
-      mobileMenu.classList.toggle('show');
-    }
+      mobileMenu.classList.toggle('show'); }
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scrolled');
+      } else {
+        navbar.classList.remove('navbar-scrolled'); }
+    });
   </script>
 </body>
 </html>
