@@ -70,11 +70,15 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
 }
-.footer-text {
+.footer-bar {
+  background-color: #1e1e1e;
   position: fixed;
   bottom: 0;
   left: 0;
-  padding: 1.2em 1.5em;
+  width: 100%;
+  padding: 1em 1.5em;
+  border-top: 1px solid #333;
+  box-sizing: border-box;
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.8rem;
   z-index: 10;
@@ -95,13 +99,45 @@ body {
 
   .logo-image-inline { height: 4.5em; }
   .logo-text-inline { font-size: 3.5em; }
-  
-  .footer-text {
+
+  .footer-bar {
     text-align: center;
-    left: 0;
-    right: 0;
     padding: 1em;
-    font-size: 0.75rem;
-    background: rgba(18,18,18,0.8);
+  }
+}
+.page-content {
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 100px 2em 120px;
+  color: #e0e0e0;
+}
+.page-content h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+.page-content h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+.page-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #b3b3b3;
+}
+.page-content p strong {
+  color: #e0e0e0;
+}
+@media (max-width: 768px) {
+  .page-content h1 {
+    font-size: 2rem;
+  }
+  .page-content h2 {
+    font-size: 1.5rem;
   }
 }
