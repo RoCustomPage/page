@@ -1,1 +1,78 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support - RoCustom</title>
+  <link rel="icon" href="/assets/RoCustom.png" type="image/png" />
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <a href="/" class="navbar-logo"><span>Ro</span><span class="logo-alt-text">Custom</span></a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/support">Support</a>
+      </nav>
+      <a href="https://discord.com/invite/bXXy65Uqaa" target="_blank" class="discord-link" rel="noopener noreferrer">
+        <img src="/assets/discord.png" alt="Discord" />
+      </a>
+    </div>
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="/">Home</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/support">Support</a>
+    </div>
+  </header>
+  <main class="page-content">
+    <h1>Get Support</h1>
+    <p>Have a question or need assistance? Here’s how you can get help. For the fastest response, we strongly recommend joining our Discord community.</p>
+    <div class="support-actions">
+      <div class="support-card">
+        <h3 class="card-title">Discord Support</h3>
+        <p class="card-subtitle">Join our Discord community for quick support and to chat and hang out.</p>
+        <a href="https://discord.com/invite/bXXy65Uqaa" target="_blank" rel="noopener noreferrer" class="card-button">
+          Join Discord
+        </a>
+      </div>
+      <div class="support-card">
+        <h3 class="card-title">Email Support</h3>
+        <p class="card-subtitle">If you have any questions or issues you can contact us via email.</p>
+        <a href="mailto:rocustom.ext@gmail.com" class="card-button">
+          Email Us
+        </a>
+      </div>
+    </div>
+    <hr style="border-color: #333; margin: 3em 0;">
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    <h3>How do I download and install RoCustom?</h3>
+    <p>You can install RoCustom only from the official Chrome Web Store. Simply search for it by name and click "Add to Chrome".</p>
+    <h3>Is RoCustom free to use?</h3>
+    <p>Yes, RoCustom is completely free for everyone to use.</p>
+    <h3>Is this safe? Will I get banned for using RoCustom?</h3>
+    <p>The extension is completely safe. It is not a cheat or an exploit. RoCustom only modifies the appearance of the roblox.com website locally within your browser by changing CSS styles and HTML elements on the fly.</p>
+    <h3>The "Find" feature on a user's profile can't find the player. Why?</h3>
+    <p>The "Find" feature works by scanning the public servers of the game the player is presumably in. It may fail to find the player if player is in a private server or player token not known.<br></p>
+    <h3>I have an idea for a new feature / I found a bug. Where can I report it?</h3>
+    <p>The best place for suggestions and bug reports is our official Discord server. You can find the link in the footer of the extension's menu.</p>
+  </main>
+  <footer class="footer-bar">
+    &copy; 2025 RoCustom. Not affiliated with Roblox Corporation.
+  </footer>
+  <script>
+    function toggleMenu() {
+      const hamburger = document.querySelector('.hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
