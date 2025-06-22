@@ -159,3 +159,53 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #777777;
 }
+.support-actions {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 2em 0;
+  flex-wrap: wrap;
+}
+.support-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 280px;
+  max-width: 380px;
+  background-color: #1e1e1e;
+  padding: 2.5em 2em;
+  border-radius: 16px;
+  border: 1px solid #333;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.support-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 0.5em 0;
+}
+.card-subtitle {
+  color: #b3b3b3;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 2em;
+}
+.card-button {
+  background-color: #33373d;
+  color: #e0e0e0;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  border: 1px solid #4a4a4a;
+}
+.card-button:hover {
+  background-color: #40444b;
+}
