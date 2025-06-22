@@ -141,3 +141,21 @@ body {
     font-size: 1.5rem;
   }
 }
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #555555 #1e1e1e;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #555555;
+  border-radius: 6px;
+  border: 2px solid #1e1e1e;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #777777;
+}
