@@ -3,26 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RoCustom Support</title>
+  <title>Support - RoCustom</title>
   <link rel="icon" href="/assets/RoCustom.png" type="image/png" />
   <link rel="stylesheet" href="../assets/style.css" />
 </head>
 <body>
-  <header class="navbar">
+  <header id="navbar" class="navbar">
     <div class="navbar-container">
       <div class="hamburger" onclick="toggleMenu()">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-      <a href="/" class="navbar-logo"><span>Ro</span><span class="logo-alt-text">Custom</span></a>
+      <a href="/" class="navbar-logo">
+        <span>Ro</span><span class="logo-alt-text">Custom</span>
+      </a>
       <nav class="nav-links">
         <a href="/">Home</a>
         <a href="/privacy">Privacy</a>
         <a href="/support">Support</a>
       </nav>
       <a href="https://discord.com/invite/bXXy65Uqaa" target="_blank" class="discord-link" rel="noopener noreferrer">
-        <img src="/assets/discord.png" alt="Discord" />
+        <img src="/assets/discord.png" alt="Discord Server" />
       </a>
     </div>
     <div id="mobileMenu" class="mobile-menu">
@@ -71,8 +73,14 @@
       const hamburger = document.querySelector('.hamburger');
       const mobileMenu = document.getElementById('mobileMenu');
       hamburger.classList.toggle('active');
-      mobileMenu.classList.toggle('show');
-    }
+      mobileMenu.classList.toggle('show'); }
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scrolled');
+      } else {
+        navbar.classList.remove('navbar-scrolled'); }
+    });
   </script>
 </body>
 </html>
