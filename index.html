@@ -3,48 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RoCustom</title>
+  <meta name="description" content="Enhance your Roblox website experience with RoCustom. Find players, see pending Robux, add custom themes, video backgrounds, and more." />
+  <meta name="keywords" content="Roblox, RoCustom, Roblox extension, find player, pending robux, custom theme, dark mode, browser extension" />
+  <title>RoCustom - Customize Your Roblox Experience</title>
   <link rel="icon" href="/assets/RoCustom.png" type="image/png" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <header class="navbar">
+  <header id="navbar" class="navbar">
     <div class="navbar-container">
       <div class="hamburger" onclick="toggleMenu()">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-
       <a href="/" class="navbar-logo">
         <span>Ro</span><span class="logo-alt-text">Custom</span>
       </a>
-
       <nav class="nav-links">
         <a href="/">Home</a>
         <a href="/privacy">Privacy</a>
         <a href="/support">Support</a>
       </nav>
-
       <a href="https://discord.com/invite/bXXy65Uqaa" target="_blank" class="discord-link" rel="noopener noreferrer">
-        <img src="/assets/discord.png" alt="Discord" />
+        <img src="/assets/discord.png" alt="Discord Server" />
       </a>
     </div>
-
     <div id="mobileMenu" class="mobile-menu">
       <a href="/">Home</a>
       <a href="/privacy">Privacy</a>
       <a href="/support">Support</a>
     </div>
   </header>
-
   <main class="main-content">
     <div class="content-wrapper">
-      <div class="logo-row">
-        <img src="/assets/RoCustom.svg" alt="R" class="logo-image-inline" />
-        <span class="logo-text-inline">oCustom</span>
+      <div class="hero-section">
+        <div class="logo-row">
+          <img src="/assets/RoCustom.svg" alt="RoCustom Logo" class="logo-image-inline" />
+          <span class="logo-text-inline">oCustom</span>
+        </div>
+        <p class="tagline">Your Roblox, your rules. Fully customize your web experience.</p>
+        <a href="https://chromewebstore.google.com/detail/cdpibimdjifbibdicbjighllbdaeakdd" class="download-button">Download</a>
       </div>
-      <a href="https://chromewebstore.google.com/detail/cdpibimdjifbibdicbjighllbdaeakdd" class="download-button">Download</a>
+      <section id="features" class="features-section">
+        <h2 class="section-title">Features</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-emoji">
+              <img src="https://cdn.jsdelivr.net/npm/emoji-datasource-apple@15.1.1/img/apple/64/1f50e.png" alt="Find Player Feature">
+            </div>
+            <h3 class="feature-title">Find Player</h3>
+            <p>Find any player on a public server and join their game directly.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-emoji">
+              <img src="https://cdn.jsdelivr.net/npm/emoji-datasource-apple@15.1.1/img/apple/64/1f3a8.png" alt="Video Backgrounds Feature">
+            </div>
+            <h3 class="feature-title">Video Backgrounds</h3>
+            <p>Tired of the default background? Upload your own video to truly personalize your homepage.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-emoji">
+              <img src="https://cdn.jsdelivr.net/npm/emoji-datasource-apple@15.1.1/img/apple/64/1fa84.png" alt="UI Adjustments Feature">
+            </div>
+            <h3 class="feature-title">UI Adjustments</h3>
+            <p>Take control of your layout. Hide or show various elements to create a cleaner interface.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-emoji">
+              <img src="https://cdn.jsdelivr.net/npm/emoji-datasource-apple@15.1.1/img/apple/64/23f3.png" alt="Show Pending Robux Feature">
+            </div>
+            <h3 class="feature-title">Show Pending</h3>
+            <p>Displays your pending Robux amount directly on any Roblox page.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-emoji">
+              <img src="https://cdn.jsdelivr.net/npm/emoji-datasource-apple@15.1.1/img/apple/64/2795.png" alt="And More Features">
+            </div>
+            <h3 class="feature-title">And more...</h3>
+            <p>Includes page indentation, image zoom on hover, and many other useful features!</p>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
   <footer class="footer-bar">
@@ -55,8 +95,14 @@
       const hamburger = document.querySelector('.hamburger');
       const mobileMenu = document.getElementById('mobileMenu');
       hamburger.classList.toggle('active');
-      mobileMenu.classList.toggle('show');
-    }
+      mobileMenu.classList.toggle('show'); }
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scrolled');
+      } else {
+        navbar.classList.remove('navbar-scrolled'); }
+    });
   </script>
 </body>
 </html>
