@@ -1,0 +1,5 @@
+user-agent: *
+
+disallow: /404.html
+
+Sitemap: https://ro-custom.xyz/sitemap.xml
