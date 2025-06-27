@@ -1,5 +1,6 @@
 user-agent: *
 
 disallow: /404.html
+disallow: /assets/
 
 Sitemap: https://ro-custom.xyz/sitemap.xml
