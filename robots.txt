@@ -3,4 +3,5 @@ user-agent: *
 disallow: /404.html
 disallow: /assets/
 
+Host: https://ro-custom.xyz
 Sitemap: https://ro-custom.xyz/sitemap.xml
