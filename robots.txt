@@ -1,6 +1,7 @@
 user-agent: *
 
 disallow: /404.html
+disallow: /README.md
 disallow: /assets/
 
 Host: https://ro-custom.xyz
