@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="#style"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
 <ruleset>
   
   <title>Правила Discord-сервера RoCustom (Русская версия)</title>
@@ -10,61 +10,25 @@
   
   <rules>
     <rule>
-      <title>1. Будьте уважительны ко всем участникам.</title>
+      <title>Будьте уважительны ко всем участникам.</title>
       <description>Наше сообщество — это место для сотрудничества и поддержки. Относитесь ко всем с добротой, терпением и уважением. Преследование, разжигание ненависти, личные нападки или любая форма дискриминации недопустимы. Помогите нам сохранить это пространство, где каждый чувствует себя комфортно.</description>
     </rule>
     <rule>
-      <title>2. Контент должен соответствовать теме.</title>
+      <title>Контент должен соответствовать теме.</title>
       <description>Пожалуйста, продолжайте обсуждения, связанные в первую очередь с расширением RoCustom, Roblox и его функциями. (2.1) Не публикуйте контент NSFW или NSFL. Избегайте срыва разговоров из-за спорных или спорных тем, не относящихся к теме.</description>
     </rule>
     <rule>
-      <title>3. Запрет на злонамеренное использование или распространение.</title>
+      <title>Запрет на злонамеренное использование или распространение.</title>
       <description>Расширение RoCustom разработано для того, чтобы значительно улучшить ваш опыт. Распространение неофициальных, модифицированных или взломанных версий расширения категорически запрещено, так как они представляют угрозу безопасности пользователей и подрывают репутацию проекта.</description>
     </rule>
     <rule>
-      <title>4. Никакого спама, флуда и флейма.</title>
+      <title>Никакого спама, флуда и флейма.</title>
       <description>Чтобы разговоры были продуктивными, избегайте переполнения каналов повторяющимися сообщениями, чрезмерным количеством эмодзи, большими стенами текста. Не вступайте в споры и не провоцируйте их (флейм).</description>
     </rule>
     <rule>
-      <title>5. Уважайте персонал и его решения.</title>
+      <title>Уважайте персонал и его решения.</title>
       <description>Наша команда модераторов работает над тем, чтобы сообщество оставалось безопасным и продуктивным. Пожалуйста, следуйте их инструкциям и относитесь к ним с уважением. Если вы не согласны с мерой по модерации, пожалуйста, свяжитесь с модератором в ЛС (личные сообщения), чтобы обсудить это. Не спорьте о модерации в публичных каналах.</description>
     </rule>
   </rules>
-  
-  <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" id="style">
-    <xsl:output method="html" encoding="UTF-8"/>
-
-    <xsl:template match="/">
-      <html>
-        <head>
-          <title><xsl:value-of select="ruleset/title"/></title>
-          <style>
-            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #2c2f33; color: #fff; }
-            .container { max-width: 900px; margin: 40px auto; padding: 25px; background: #23272a; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.5); }
-            h1 { color: #7289da; border-bottom: 2px solid #7289da; padding-bottom: 10px; }
-            .welcome { background: #40444b; padding: 15px; border-radius: 5px; margin-bottom: 30px; font-style: italic; }
-            .rule { margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px solid #40444b; }
-            .rule h2 { margin: 0 0 10px 0; color: #ffffff; }
-            .rule p { margin: 0; color: #dcddde; }
-            .rule:last-child { border-bottom: none; }
-          </style>
-        </head>
-        <body>
-          <div class="container">
-            <h1><xsl:value-of select="ruleset/title"/></h1>
-            <div class="welcome">
-              <p><xsl:value-of select="ruleset/welcome_message"/></p>
-            </div>
-            <xsl:for-each select="ruleset/rules/rule">
-              <div class="rule">
-                <h2><xsl:value-of select="@number"/>: <xsl:value-of select="title"/></h2>
-                <p><xsl:value-of select="description"/></p>
-              </div>
-            </xsl:for-each>
-          </div>
-        </body>
-      </html>
-    </xsl:template>
-  </xsl:stylesheet>
   
 </ruleset>
