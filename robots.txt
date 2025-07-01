@@ -3,6 +3,7 @@ user-agent: *
 disallow: /404.html
 disallow: /README.md
 disallow: /assets/
+disallow: /api.json
 
 Host: https://ro-custom.xyz
 Sitemap: https://ro-custom.xyz/sitemap.xml
