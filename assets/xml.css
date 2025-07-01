@@ -54,7 +54,7 @@ rule > title {
 }
 rule > title::before {
   counter-increment: rule-counter;
-  content: 'Правило №' counter(rule-counter) ': ';
+  content: 'counter(rule-counter) ': ';
 }
 description {
   display: block;
