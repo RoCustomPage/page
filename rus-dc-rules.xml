@@ -57,7 +57,6 @@
             </div>
             <xsl:for-each select="ruleset/rules/rule">
               <div class="rule">
-                <h2>Правило №<xsl:value-of select="@number"/>: <xsl:value-of select="title"/></h2>
                 <p><xsl:value-of select="description"/></p>
               </div>
             </xsl:for-each>
