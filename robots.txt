@@ -1,7 +1,6 @@
 user-agent: *
 
 disallow: /404.html
-disallow: /README.md
 disallow: /assets/
 disallow: /api.json
 
