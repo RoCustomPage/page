@@ -81,6 +81,10 @@
       } else {
         navbar.classList.remove('navbar-scrolled'); }
     });
+    if (window.location.pathname.endsWith('/')) {
+      const newPath = window.location.pathname.slice(0, -1);
+      window.history.replaceState(null, '', newPath + window.location.search);
+    }
   </script>
 </body>
 </html>
